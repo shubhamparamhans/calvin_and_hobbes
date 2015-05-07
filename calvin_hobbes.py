@@ -59,6 +59,5 @@ for obj in objects:
 		t= Thread(target=find_and_download, args=(id_is,directory_path, str(index)))
 		t.start()
 		index = index+1
-		#t = thread.start_new_thread( find_and_download, (id_is, directory_path, ) )
 	except:
 		print("unable to start for "+id_is)
